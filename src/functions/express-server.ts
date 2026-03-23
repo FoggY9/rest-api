@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 const app = express()
-const port = 3200
+const port = process.env.PORT || 3200
 
 //allow cors
 app.use(cors({

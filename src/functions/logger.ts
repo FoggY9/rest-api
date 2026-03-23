@@ -1,7 +1,6 @@
 import { createWriteStream, mkdirSync, existsSync } from 'node:fs';
 import path from "path"
 import eventEmitter from 'events';
-console.log("on run logger")
 
 const logDir = path.join(process.cwd(), "logs")
 if (!existsSync(logDir)) {

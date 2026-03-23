@@ -12,7 +12,7 @@ const getRoutes = async (app: any) => {
   const filteredRoutings = routings.filter(file => file.endsWith(".js"));
 
   console.log(
-    `routes found -> ${filteredRoutings.map(file => file.replace(".js", "")).join(", ")} = ${filteredRoutings.length}`
+    `routes found -> [${filteredRoutings.map(file => file.replace(".js", "")).join(", ")}] = ${filteredRoutings.length}`
   )
 
   for (const file of filteredRoutings) {
