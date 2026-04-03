@@ -2,7 +2,7 @@ import { createWriteStream } from "node:fs";
 import path from "path";
 import { EventEmitter } from "node:events";
 
-export const performanceLogger = new EventEmitter();
+export const performanceLogger = new EventEmitter();  
 
 const perfStream = createWriteStream(path.join(process.cwd(), "performance.log"),{ flags: "a" });
 

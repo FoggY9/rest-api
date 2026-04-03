@@ -20,10 +20,10 @@ if(reason.errno == -3001){
         console.log(' [antiCrash] :: Uncaught Exception/Catch (MONITOR)');
        console.log(err, origin);
      });
-     process.on('multipleResolves', (type, promise, reason) => {
-            let msg = ` [antiCrash] :: Multiple Resolves\nType: ${type}\nPromise: ${promise}\nReason: ${reason}`;
-            logger.emit("error", msg);
-         console.log(' [antiCrash] :: Multiple Resolves');
-         console.log(type, promise, reason);
-     }); //we dont want to mess with async errors, cause they wont stop the proccess (i hope)
+    //  process.on('multipleResolves', (type, promise, reason) => {
+    //         let msg = ` [antiCrash] :: Multiple Resolves\nType: ${type}\nPromise: ${promise}\nReason: ${reason}`;
+    //         logger.emit("error", msg);
+    //      console.log(' [antiCrash] :: Multiple Resolves');
+    //      console.log(type, promise, reason);
+    //  }); //we dont want to mess with async errors, cause they wont stop the proccess (i hope)
  }
